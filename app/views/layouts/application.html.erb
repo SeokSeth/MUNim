@@ -1,14 +1,39 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Munim</title>
+  <title>MUNiM</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous"> 
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
-<body>
-
+<body style="background-color:#9FC8F2">
+<div>
+	<div id="custom-bootstrap-menu" class="navbar navbar-default navbar-fixed-top" role="navigation">
+	    <div class="container-fluid">
+	        <div class="navbar-header"><a class="navbar-brand" href="home#index">MUNiM</a>
+	            <button type="button" class="glyphicon glyphicon-menu-down navbar-toggle" data-toggle="collapse" data-target=".navbar-menubuilder"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+	            </button>
+	        </div>
+	        <div class="collapse navbar-collapse navbar-menubuilder">
+	            <ul class="nav navbar-nav navbar-right">
+	                <li><a href="home#registration">Registration</a>
+	                </li>
+	                <li><a href="home#about">About Us</a>
+	                </li>
+	                <li><a href="Committees#index">Committees</a>
+	                </li>
+	                <li><a href="home#schedule">Schedule</a>
+	                </li>
+	                <li><a href="Home#contact">Contact Us</a>
+	                </li>
+	            </ul>
+	        </div>
+	    </div>
+	</div>
+</div>
+<div>
 <%= yield %>
-
+</div>
 </body>
 </html>
