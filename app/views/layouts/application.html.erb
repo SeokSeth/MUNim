@@ -3,6 +3,10 @@
 <head>
   <title>MUNiM</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous"> 
+  <!-- Start WOWSlider.com HEAD section -->
+<link rel="stylesheet" type="text/css" href="assets/style.css" />
+<script type="text/javascript" src="assets/jquery.js"></script>
+<!-- End WOWSlider.com HEAD section -->
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
@@ -12,20 +16,31 @@
 			<div id="custom-bootstrap-menu" class="navbar navbar-default navbar-fixed-top" role="navigation">
 			    <div class="container-fluid" style="background-color: #083A80">
 			        <div class="navbar-header"><a class="navbar-brand" href="home#index">MUNiM</a>
-			            <button type="button" class="glyphicon glyphicon-menu-down navbar-toggle" data-toggle="collapse" data-target=".navbar-menubuilder"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
-			            </button>
+			            <button type="button" class="glyphicon glyphicon-menu-down navbar-toggle drop-down" data-toggle="collapse" data-target=".navbar-menubuilder"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+			            </button>l
 			        </div>
 			        <div class="collapse navbar-collapse navbar-menubuilder" >
 			            <ul class="nav navbar-nav navbar-right"  >
-			                <li ><a href="home#registration" class="blue">Registration</a>
-			                </li>
 			                <li><a href="home#about">About Us</a>
 			                </li>
-			                <li><a href="Committees#index">Committees</a>
+			                <li><div class="dropdown">
+								  <button class="dropbtn">Committees</button>
+								  <div class="dropdown-content">
+								    <a href="#">Security Council</a>
+								    <a href="#">Social, Humanitarian, and Cultural Committee</a>
+								    <a href="#">European Union</a>
+								    <a href="#">Environmental Committee</a>
+								    <a href="#">Historical Committee</a>
+								    <a href="#">World Trade Organization</a>
+								    <a href="#">General Assembley</a>
+								  </div>
+								</div>
 			                </li>
 			                <li><a href="home#schedule">Schedule</a>
 			                </li>
 			                <li><a href="Home#contact">Contact Us</a>
+			                </li>
+			                <li ><a href="home#registration" class="blue">Apply now!</a>
 			                </li>
 			            </ul>
 			        </div>

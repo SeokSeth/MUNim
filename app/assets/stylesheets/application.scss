@@ -82,18 +82,18 @@
     background-color: rgba(159, 200, 242, 1);
 }
 #custom-bootstrap-menu.navbar-default .navbar-toggle {
-    border-color: #9fc8f2;
+    border-color: white;
 }
 #custom-bootstrap-menu.navbar-default .navbar-toggle:hover,
 #custom-bootstrap-menu.navbar-default .navbar-toggle:focus {
-    background-color: #9fc8f2;
+    background-color: rgba(159, 200, 242, 1);
 }
 #custom-bootstrap-menu.navbar-default .navbar-toggle .icon-bar {
-    background-color: #9fc8f2;
+    background-color: white;
 }
 #custom-bootstrap-menu.navbar-default .navbar-toggle:hover .icon-bar,
 #custom-bootstrap-menu.navbar-default .navbar-toggle:focus .icon-bar {
-    background-color: #9fc8f2;
+    background-color: white;
 }
 #nav-dim:hover {
         color: rgba(51, 51, 51, 1);
@@ -111,4 +111,74 @@
 .bg_pic{
     background-image: image-url('Background_1.jpg');
 }
+
+.drop-down{
+    color:white
+}
+.drop-down:hover{
+    color:grey
+}
+.dropbtn {
+    background-color: #083A80;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    font-family:trench;
+    padding-bottom: 16px;
+    height: 47px;
+    padding-top: 14px;
+    font-size:14px;
+    border-radius:0px;
+
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #D3E5FF;
+    min-width: 15em;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    font-family:trench;
+    font-size:14px;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+@media screen and (max-width: 650px){
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #D3E5FF;
+    min-width: 100em;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+}
+.dropdown-content a:hover {background-color: #A0C6FF}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #D3E5FF;
+    color:black;
+}
+
+
+
 
