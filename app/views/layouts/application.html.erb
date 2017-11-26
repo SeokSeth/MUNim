@@ -15,32 +15,33 @@
 		<div>
 			<div id="custom-bootstrap-menu" class="navbar navbar-default navbar-fixed-top" role="navigation">
 			    <div class="container-fluid" style="background-color: #083A80">
-			        <div class="navbar-header"><a class="navbar-brand" href="/">MUNiM</a>
+			        <div class="navbar-header">
+			        	<%=link_to("MUNiM", root_path,class:"navbar-brand")%>
 			            <button type="button" class="glyphicon glyphicon-menu-down navbar-toggle drop-down" data-toggle="collapse" data-target=".navbar-menubuilder"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
-			            </button>l
+			            </button>
 			        </div>
 			        <div class="collapse navbar-collapse navbar-menubuilder" >
 			            <ul class="nav navbar-nav navbar-right"  >
-			                <li><a class="rest" href="home/about">About Us</a>
+			                <li><%=link_to("About Us",home_about_path, class:"rest")%>
 			                </li>
 			                <li><div class="dropdown">
 								  <button class="dropbtn">Committees</button>
 								  <div class="dropdown-content">
-								    <a href="#">Security Council</a>
-								    <a href="#">Social, Humanitarian, and Cultural Committee</a>
-								    <a href="#">European Union</a>
-								    <a href="#">Environmental Committee</a>
-								    <a href="#">Historical Committee</a>
-								    <a href="#">World Trade Organization</a>
-								    <a href="#">General Assembley</a>
+								  	<%=link_to("Security Council",committee_Securtiy_path)%>
+								  	<%=link_to("Social, Humanitarian, and Cultural Committee",committee_SHC_path)%>
+								  	<%=link_to("European Union",committee_EU_path)%>
+								  	<%=link_to("Environmental Committee",committee_Environmental_path)%>
+								  	<%=link_to("Historical Committee",committee_Historical_path)%>
+								  	<%=link_to("World Trade Organization",committee_WTO_path)%>
+								  	<%=link_to("General Assembley",committee_GA_path)%>
 								  </div>
 								</div>
 			                </li>
-			                <li><a class="rest" href="home/schedule">Schedule</a>
+			                <li><%=link_to("Schedule",home_schedule_path, class:"rest")%>
 			                </li>
-			                <li><a class="rest" href="Home/contact">Contact Us</a>
+			                <li><%= link_to("Contact Us",home_contact_path, class:"rest")%>
 			                </li>
-			                <li ><a href="home/registration" class="blue" id="apply">Apply now!</a>
+			                <li ><%= link_to("Apply now!",home_registration_path, class:"blue",id:"apply" )%>
 			                </li>
 			            </ul>
 			        </div>
