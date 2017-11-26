@@ -16,29 +16,11 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
-@font-face {
-  font-family: "Roboto";
-  src:url('/assets/Roboto-Black.ttf') format('truetype'),
-  url('/assets/Roboto-BlackItalic.otf') format('truetype'),
-  url('/assets/Roboto-Bold.otf') format('truetype'),
-  url('/assets/Roboto-BoldItalic.otf') format('truetype'),
-  url('/assets/Roboto-Italic.otf') format('truetype'),
-  url('/assets/Roboto-Light.ttf') format('truetype'),
-  url('/assets/Roboto-LightItalic.ttf') format('truetype'),
-  url('/assets/Roboto-Medium.ttf') format('truetype'),
-  url('/assets/Roboto-MediumItalic.ttf') format('truetype'),
-  url('/assets/Roboto-Regular.ttf') format('truetype'),
-  url('/assets/Roboto-Thin.ttf') format('truetype'),
-  url('/assets/Roboto-ThinItalic.ttf') format('truetype');
-}
-@font-face {
-  font-family: "Kirvy";
-  src:url('/assets/timeburnernormal.ttf') format('truetype'),
-  url('/assets/Kirvy-Bold.otf') format('truetype'),
-  url('/assets/Kirvy-Light.otf') format('truetype'),
-  url('/assets/Kirvy-Regular.otf') format('truetype'),
-  url('/assets/Kirvy-Thin.otf') format('truetype');
-}
+/*******/
+
+
+/*****/
+
 @font-face {
   font-family: "Trench";
   src:url('/assets/trench100free.otf') format('truetype'),
@@ -49,19 +31,13 @@
   src:url('/assets/timeburnerbold.ttf') format('truetype'),
   url('/assets/timeburnernormal.ttf') format('truetype')
 }
-@font-face {
-  font-family: "Vertigo";
-  src:url('/assets/VertigoFLF-Bold.ttf') format('truetype'),
-  url('/assets/VertigoFLF.ttf') format('truetype'),
-  url('/assets/VertigoPlusFLF-Bold.ttf') format('truetype'),
-  url('/assets/VertigoPlusFLF.ttf') format('truetype');
-}
+
 #custom-bootstrap-menu.navbar-default .navbar-brand {
     color: white;
     font-family: Trench;
 }
 #custom-bootstrap-menu.navbar-default {
-    font-size: 14px;
+    font-size: 18px;
     background-color: rgba(159, 200, 242, 1);
     border-bottom-width: 0px;
 }
@@ -128,8 +104,8 @@
     font-family:trench;
     padding-bottom: 16px;
     height: 47px;
-    padding-top: 14px;
-    font-size:14px;
+    padding-top: 12px;
+    font-size:18px;
     border-radius:0px;
 
 }
@@ -189,6 +165,102 @@
     color:white;
 
 }
+/******/
 
+.btn-registration { 
+  color: #ffffff; 
+  background-color: #05336B; 
+  border-color: #02000A; 
+  font-family: Burner;
+  font-size: 21px;
+} 
+ 
+.btn-registration:hover, 
+.btn-registration:focus, 
+.btn-registration:active, 
+.btn-registration.active, 
+.open .dropdown-toggle.btn-registration { 
+  color: #ffffff; 
+  background-color: #01063B; 
+  border-color: #02000A; 
+} 
+ 
+.btn-registration:active, 
+.btn-registration.active, 
+.open .dropdown-toggle.btn-registration { 
+  background-image: none; 
+} 
+ 
+.btn-registration.disabled, 
+.btn-registration[disabled], 
+fieldset[disabled] .btn-registration, 
+.btn-registration.disabled:hover, 
+.btn-registration[disabled]:hover, 
+fieldset[disabled] .btn-registration:hover, 
+.btn-registration.disabled:focus, 
+.btn-registration[disabled]:focus, 
+fieldset[disabled] .btn-registration:focus, 
+.btn-registration.disabled:active, 
+.btn-registration[disabled]:active, 
+fieldset[disabled] .btn-registration:active, 
+.btn-registration.disabled.active, 
+.btn-registration[disabled].active, 
+fieldset[disabled] .btn-registration.active { 
+  background-color: #05336B; 
+  border-color: #02000A; 
+} 
+ 
+.btn-registration .badge { 
+  color: #05336B; 
+  background-color: #ffffff; 
+}
 
+.container {
+    width: 30%;
+    margin-top: 15%;
+}
 
+.bgcolor{
+  background-color: #2961AD;
+  width:90em;
+  height:25em;
+  margin-top:5em;
+}
+
+.default{
+  color:white;
+  font-family: Burner;
+}
+
+.bglel{
+  width:100em;
+  height:100em;
+  margin-top:5em;
+  margin-left: 6%;
+}
+
+.btnn {
+  -webkit-border-radius: 10;
+  -moz-border-radius: 10;
+  border-radius: 10px;
+/*  -webkit-box-shadow: 3px 5px 20px #666666;
+  -moz-box-shadow: 3px 5px 20px #666666;*/
+/*  box-shadow: 3px 5px 20px #666666;*/
+  font-family: Burner;
+  color: black;
+  font-size: 24px;
+  background: #FFD429;
+  padding: 20px 35px 20px 35px;
+/*  border: solid #1f628d 1px;*/
+  text-decoration: none;
+}
+
+.btnn:hover {
+  background: #FFDE51;
+  color:grey;
+  text-decoration: none;
+}
+
+.rounded-circle{
+  border-radius: 50%;
+}

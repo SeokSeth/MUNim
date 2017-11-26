@@ -13,4 +13,16 @@ class HomeController < ApplicationController
 
   def registration
   end
+
+  def registration_IL
+  end
+
+  def registration_DL
+  end
+
+  def registration_II
+  end
+
+  def registration_DI
+  end
 end

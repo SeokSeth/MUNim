@@ -20,8 +20,16 @@ Rails.application.routes.draw do
   get 'home/schedule'
 
   get 'home/contact'
-  
+
   get 'home/registration'
+
+  get 'home/registration_II'
+
+  get 'home/registration_DI'
+
+  get 'home/registration_IL'
+
+  get 'home/registration_DL'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

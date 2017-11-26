@@ -1,0 +1,23 @@
+
+
+<div class="container-fluid bgcolor">
+  <h2 class="default">To apply please select the correct form</h2>
+  <h3 class="default">Local</h3>
+  <div class="row">
+    <div class="col-sm" style="display:inline; margin-left:10em;">
+      <%=link_to("Local Individuals",home_registration_IL_path,class:"btnn btn-registration")%>
+    </div>  
+    <div class="col-sm" style="display:inline; margin-left:30em;">
+      <%=link_to("Local Delegates",home_registration_DL_path,class:"btnn")%>
+    </div>
+  </div>
+  <h3 class="default" style="margin-bottom: 2em; margin-top: 2em;">International</h3>
+  <div class="row">
+    <div class="col-sm" style="display:inline; margin-left:8em;">
+      <%=link_to("International Individuals",home_registration_II_path,class:"btnn")%> 
+    </div>
+    <div class="col-sm" style="display:inline; margin-left:23.5em;">
+      <%=link_to("International Delegates",home_registration_DI_path,class:"btnn")%>
+    </div>
+  </div>
+</div>

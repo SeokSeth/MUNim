@@ -8,7 +8,6 @@
 <script type="text/javascript" src="assets/jquery.js"></script>
 <!-- End WOWSlider.com HEAD section -->
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
 	<body class="body_color">
@@ -51,5 +50,6 @@
 		<div class="body">
 		<%= yield %>
 		</div>
+		 <%= javascript_include_tag 'application', 'data-turbolinks-track' => false %>
 	</body>
 </html>
